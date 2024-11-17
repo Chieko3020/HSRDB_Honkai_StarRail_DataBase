@@ -1,0 +1,2268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1400</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1400</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>HSRDB</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/res/icon.png</normaloff>:/res/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>1100</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="start">
+     <widget class="QLabel" name="stbg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1100</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/start.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="character">
+     <widget class="QLabel" name="chbg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1100</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/panel.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tachie">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>400</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lcp">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>0</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="subpanel">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>400</y>
+        <width>200</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>180</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>180</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color: rgb(255, 255, 255);
+border-image: url(:/res/empty.png);
+font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>HP</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>ATK</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>DEF</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>SPD</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>CritRate</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>CritDMG</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>1</pointsize>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>2500</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/hp.png</normaloff>:/staticon/res/statsicon/hp.png</iconset>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>2000</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/atk.png</normaloff>:/staticon/res/statsicon/atk.png</iconset>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>1500</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/def.png</normaloff>:/staticon/res/statsicon/def.png</iconset>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>160</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/spd.png</normaloff>:/staticon/res/statsicon/spd.png</iconset>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>0.05</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/critrate.png</normaloff>:/staticon/res/statsicon/critrate.png</iconset>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>0.5</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/critdmg.png</normaloff>:/staticon/res/statsicon/critdmg.png</iconset>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="morebtn">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>570</y>
+        <width>40</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/more.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="lcpanel">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>100</y>
+        <width>200</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color: rgb(255, 255, 255);
+border-image: url(:/res/empty.png);
+font: 12pt &quot;Microsoft YaHei UI&quot;;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>HP</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>ATK</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>DEF</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>1</pointsize>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>1058</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/hp.png</normaloff>:/staticon/res/statsicon/hp.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>582.12</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/atk.png</normaloff>:/staticon/res/statsicon/atk.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>463.05</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/def.png</normaloff>:/staticon/res/statsicon/def.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lcskill">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>0</y>
+        <width>300</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="path">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>500</y>
+        <width>200</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 16pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lclb">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>200</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;LightCone :          &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="concept">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>400</y>
+        <width>200</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 16pt &quot;Meiryo UI&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lcconcept">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>50</y>
+        <width>200</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>In the night</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifych">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+image: url(:/res/modify.png);
+background-color:transparent;
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifylc">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+image: url(:/res/modifyred.png);
+background-color:transparent;
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="reliclb">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>200</y>
+        <width>200</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Relic Sets :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cavern2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>250</y>
+        <width>200</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="cavern4">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>350</y>
+        <width>200</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="planar2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>450</y>
+        <width>200</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="headlb">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>375</y>
+        <width>100</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Head&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bodylb">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>375</y>
+        <width>100</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Body&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="handslb">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>525</y>
+        <width>100</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Hands&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="feetlb">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>525</y>
+        <width>100</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Feet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="planarspherelb">
+      <property name="geometry">
+       <rect>
+        <x>925</x>
+        <y>375</y>
+        <width>150</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;PlanarSphere&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="linkropelb">
+      <property name="geometry">
+       <rect>
+        <x>925</x>
+        <y>525</y>
+        <width>150</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 9pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;LinkRope&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="pc4bg">
+      <property name="geometry">
+       <rect>
+        <x>565</x>
+        <y>250</y>
+        <width>325</width>
+        <height>325</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/circle.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="pc2bg">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>325</y>
+        <width>200</width>
+        <height>150</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/rectangle.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="relicset1">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>200</y>
+        <width>300</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 11pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="relicset2">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>200</y>
+        <width>200</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 11pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Head">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>275</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Body">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>275</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Hands">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>425</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Feet">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>425</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PlanarSphere">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>275</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LinkRope">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>425</y>
+        <width>100</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>chbg</zorder>
+     <zorder>tachie</zorder>
+     <zorder>lcp</zorder>
+     <zorder>subpanel</zorder>
+     <zorder>morebtn</zorder>
+     <zorder>lcpanel</zorder>
+     <zorder>lcskill</zorder>
+     <zorder>path</zorder>
+     <zorder>lclb</zorder>
+     <zorder>concept</zorder>
+     <zorder>lcconcept</zorder>
+     <zorder>modifych</zorder>
+     <zorder>modifylc</zorder>
+     <zorder>reliclb</zorder>
+     <zorder>cavern2</zorder>
+     <zorder>cavern4</zorder>
+     <zorder>planar2</zorder>
+     <zorder>headlb</zorder>
+     <zorder>pc4bg</zorder>
+     <zorder>handslb</zorder>
+     <zorder>feetlb</zorder>
+     <zorder>bodylb</zorder>
+     <zorder>pc2bg</zorder>
+     <zorder>planarspherelb</zorder>
+     <zorder>linkropelb</zorder>
+     <zorder>relicset1</zorder>
+     <zorder>relicset2</zorder>
+     <zorder>Head</zorder>
+     <zorder>Body</zorder>
+     <zorder>Hands</zorder>
+     <zorder>Feet</zorder>
+     <zorder>PlanarSphere</zorder>
+     <zorder>LinkRope</zorder>
+    </widget>
+    <widget class="QWidget" name="lightcone">
+     <widget class="QLabel" name="lcbg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1100</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/panel.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lctachie">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>0</y>
+        <width>250</width>
+        <height>375</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/lightcones/tachie/res/LightCones/tachie/5stars/The Hunt/In the Night.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="skill">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>405</y>
+        <width>250</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 700 8pt &quot;Meiryo UI&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Increases the wearer's CRIT Rate by 18%. While the wearer is in battle, for every 10 SPD that exceeds 100, increases DMG dealt by Basic ATK and Skill by 6%. At the same time, increases the CRIT DMG of Ultimate by 12%. This effect can stack up to 6 time(s).</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="lcbase">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>370</y>
+        <width>250</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>250</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color: rgb(255, 255, 255);
+border-image: url(:/res/empty.png);
+font: 10pt &quot;Microsoft YaHei UI&quot;;
+</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>18</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>80</number>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>1</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>HP</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ATK</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DEF</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>1058.4</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/hp.png</normaloff>:/staticon/res/statsicon/hp.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>582.2</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/atk.png</normaloff>:/staticon/res/statsicon/atk.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>463.05</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>:/staticon/res/statsicon/def.png</normaloff>:/staticon/res/statsicon/def.png</iconset>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="addlc">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removelc">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="searchlc">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>550</y>
+        <width>200</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>50</number>
+      </property>
+      <property name="placeholderText">
+       <string>Search Concept</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="lctable">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>800</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>800</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color:transparent;
+gridline-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="prepage">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Previous Page</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nexpage">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Next Page</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="relic">
+     <widget class="QLabel" name="rcbg">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1100</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/res/panel.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="nexpage_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Next Page</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="rltable">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>800</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>800</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color:transparent;
+gridline-color: rgb(255, 255, 255);
+</string>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectItems</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+     <widget class="QLineEdit" name="searchrl">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>550</y>
+        <width>200</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="maxLength">
+       <number>50</number>
+      </property>
+      <property name="placeholderText">
+       <string>Search Relic Set</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="prepage_2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Previous Page</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="removerl">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addrl">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>550</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushiButton
+{
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0);
+}
+QPushButton:hover
+{
+    color:white;
+    background-color:rgb(44 , 137 , 255);
+    border: 1px solid rgb(11 , 137 , 234);
+}
+QPushButton:pressed
+{
+    color:white;
+    background-color:rgb(14 , 135 , 228);
+    border: 1px solid rgb(12 , 138 , 235);
+    padding-left:3px;
+    padding-top:3px;
+}
+
+</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rlicon">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>0</y>
+        <width>250</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/relics/Planar Ornaments/res/Relics/Planar Ornaments/Rutilant Arena/PlanarSphere.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="rlbase">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>250</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>200</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color: rgb(255, 255, 255);
+border-image: url(:/res/empty.png);</string>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::NoSelection</enum>
+      </property>
+      <property name="showGrid">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>40</number>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>MainStat</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>SubStat1</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>SubStat2</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>SubStat3</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>SubStat4</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>1</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>1</pointsize>
+        </font>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>MainStat</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="font">
+        <font>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>SubStat1</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>SubStat2</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>SubStat3</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>SubStat4</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <kerning>false</kerning>
+        </font>
+       </property>
+       <property name="flags">
+        <set>ItemIsEnabled</set>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignTrailing|AlignVCenter</set>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="menubg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>300</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/res/menubg.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chtbtn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>0</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image: url(:/res/Character.png);
+border:none;
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ch">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Meiryo UI&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Character</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lcbtn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>150</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image: url(:/res/LightCone.png);
+border:none;
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lc">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Meiryo UI&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>LightCone</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rlbtn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>300</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image: url(:/res/Relic.png);
+border:none;
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rl">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>400</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Meiryo UI&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Relic</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exitbtn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>450</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image: url(:/res/Exit.png);
+border:none;
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>550</y>
+      <width>120</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Meiryo UI&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>menubg</zorder>
+   <zorder>chtbtn</zorder>
+   <zorder>ch</zorder>
+   <zorder>lcbtn</zorder>
+   <zorder>lc</zorder>
+   <zorder>rlbtn</zorder>
+   <zorder>rl</zorder>
+   <zorder>exitbtn</zorder>
+   <zorder>exit</zorder>
+   <zorder>stackedWidget</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

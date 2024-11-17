@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addrelic</class>
+ <widget class="QWidget" name="addrelic">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>420</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AddRelic</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/res/icon.png</normaloff>:/res/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QDoubleSpinBox" name="MSValue">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>125</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::PlusMinus</enum>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="maximum">
+    <double>1000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>705.600000000000023</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>75</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Slot</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>25</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="configuebtn">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>370</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+font: 16pt &quot;Meiryo UI&quot;;
+background-color: rgb(231, 231, 231);
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0)
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Configue</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Slot">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>75</y>
+     <width>170</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <item>
+    <property name="text">
+     <string>Head</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hands</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Body</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Feet</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PlanarSphere</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>LinkRope</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>125</y>
+     <width>65</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Value</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>125</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MainStat</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>75</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="concept">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>25</y>
+     <width>410</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>100</number>
+   </property>
+   <property name="placeholderText">
+    <string>The Relic's set</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>165</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SubStat (No less than three and no more than four)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="calcelbtn">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>370</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+font: 20pt &quot;Meiryo UI&quot;;
+background-color: rgb(231, 231, 231);
+border-radius: 15px;
+border:1px solid rgb(0, 0, 0)
+}
+QPushButton:hover
+{
+    padding-left:3px;
+    padding-top:3px;
+}
+QPushButton:pressed
+{
+    padding-left:3px;
+    padding-top:3px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SlotName">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>75</y>
+     <width>200</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="maxLength">
+    <number>100</number>
+   </property>
+   <property name="placeholderText">
+    <string>The Relic's name</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="MainStat">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>125</y>
+     <width>150</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>HPBoost</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ATK</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="ATKBoost">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>200</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="minimum">
+    <double>16.940000000000001</double>
+   </property>
+   <property name="maximum">
+    <double>127.010000000000005</double>
+   </property>
+   <property name="value">
+    <double>16.940000000000001</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>200</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ATK%</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="ATKBoostPercentage">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>200</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.034600000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.259200000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+   <property name="value">
+    <double>0.034600000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>230</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DEF%</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="DEFBoostPercentage">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>230</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.043200000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.324000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DEF</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="DEFBoost">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>230</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="minimum">
+    <double>16.940000000000001</double>
+   </property>
+   <property name="maximum">
+    <double>127.010000000000005</double>
+   </property>
+   <property name="value">
+    <double>16.940000000000001</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HP</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_6">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>260</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HP%</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="HPBoost">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>260</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="minimum">
+    <double>33.869999999999997</double>
+   </property>
+   <property name="maximum">
+    <double>254.030000000000001</double>
+   </property>
+   <property name="value">
+    <double>33.869999999999997</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="EffectRES">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>320</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.034600000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.259200000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_7">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>200</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SPD</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_11">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>290</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>EffectHitRate</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="SPDBoost">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>200</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>1</number>
+   </property>
+   <property name="minimum">
+    <double>2.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>15.600000000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_12">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>EffeftRES</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="CritDMG">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>260</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.051800000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.388800000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_8">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>230</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CritRate</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="CritRate">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>230</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.025900000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.194400000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="EffectHitRate">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>290</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.034600000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.259200000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_9">
+   <property name="geometry">
+    <rect>
+     <x>355</x>
+     <y>260</y>
+     <width>70</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CritDMG</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_10">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BreakEffect</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="BreakEffect">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>290</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.051800000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.388800000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="HPBoostPercentage">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>260</y>
+     <width>60</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="wrapping">
+    <bool>true</bool>
+   </property>
+   <property name="accelerated">
+    <bool>true</bool>
+   </property>
+   <property name="decimals">
+    <number>4</number>
+   </property>
+   <property name="minimum">
+    <double>0.034600000000000</double>
+   </property>
+   <property name="maximum">
+    <double>0.259200000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.010000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

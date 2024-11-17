@@ -1,0 +1,458 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/menubg.png</file>
+        <file>res/LightCone.png</file>
+        <file>res/panel.png</file>
+        <file>res/Character.png</file>
+        <file>res/Exit.png</file>
+        <file>res/Relic.png</file>
+        <file>res/empty.png</file>
+        <file>res/more.png</file>
+        <file>res/modify.png</file>
+        <file>res/modifyred.png</file>
+        <file>res/icon.png</file>
+        <file>res/start.jpg</file>
+        <file>res/circle.png</file>
+        <file>res/rectangle.png</file>
+        <file>res/help.png</file>
+        <file>res/cancel.png</file>
+    </qresource>
+    <qresource prefix="/combat">
+        <file>res/combat/fire.png</file>
+        <file>res/combat/ice.png</file>
+        <file>res/combat/imaginary.png</file>
+        <file>res/combat/lightning.png</file>
+        <file>res/combat/physial.png</file>
+        <file>res/combat/quantum.png</file>
+        <file>res/combat/wind.png</file>
+    </qresource>
+    <qresource prefix="/path">
+        <file>res/path/abundance.png</file>
+        <file>res/path/destruction.png</file>
+        <file>res/path/erudition.png</file>
+        <file>res/path/harmony.png</file>
+        <file>res/path/nihility.png</file>
+        <file>res/path/preservation.png</file>
+        <file>res/path/thehunt.png</file>
+    </qresource>
+    <qresource prefix="/rairty">
+        <file>res/rairty/4star.png</file>
+        <file>res/rairty/5star.png</file>
+        <file>res/rairty/3star.png</file>
+    </qresource>
+    <qresource prefix="/lightcones/icon">
+        <file>res/LightCones/icon/3stars/Abundance/Cornucopia.png</file>
+        <file>res/LightCones/icon/3stars/Abundance/Fine Fruit.png</file>
+        <file>res/LightCones/icon/3stars/Abundance/Multiplication.png</file>
+        <file>res/LightCones/icon/3stars/Destruction/Collapsing Sky.png</file>
+        <file>res/LightCones/icon/3stars/Destruction/Mutual Demise.png</file>
+        <file>res/LightCones/icon/3stars/Destruction/Shattered Home.png</file>
+        <file>res/LightCones/icon/3stars/Erudition/Data Bank.png</file>
+        <file>res/LightCones/icon/3stars/Erudition/Passkey.png</file>
+        <file>res/LightCones/icon/3stars/Erudition/Sagacity.png</file>
+        <file>res/LightCones/icon/3stars/Harmony/Chorus.png</file>
+        <file>res/LightCones/icon/3stars/Harmony/Mediation.png</file>
+        <file>res/LightCones/icon/3stars/Harmony/Meshing Cogs.png</file>
+        <file>res/LightCones/icon/3stars/Nihility/Hidden Shadow.png</file>
+        <file>res/LightCones/icon/3stars/Nihility/Loop.png</file>
+        <file>res/LightCones/icon/3stars/Nihility/Void.png</file>
+        <file>res/LightCones/icon/3stars/Preservation/Amber.png</file>
+        <file>res/LightCones/icon/3stars/Preservation/Defense.png</file>
+        <file>res/LightCones/icon/3stars/Preservation/Pioneering.png</file>
+        <file>res/LightCones/icon/3stars/The Hunt/Adversarial.png</file>
+        <file>res/LightCones/icon/3stars/The Hunt/Arrows.png</file>
+        <file>res/LightCones/icon/3stars/The Hunt/Darting Arrow.png</file>
+        <file>res/LightCones/icon/4stars/Abundance/Hey, Over Here.png</file>
+        <file>res/LightCones/icon/4stars/Abundance/Perfect Timing.png</file>
+        <file>res/LightCones/icon/4stars/Abundance/Post-Op Conversation.png</file>
+        <file>res/LightCones/icon/4stars/Abundance/Quid Pro Quo.png</file>
+        <file>res/LightCones/icon/4stars/Abundance/Shared Feeling.png</file>
+        <file>res/LightCones/icon/4stars/Abundance/Warmth Shortens Cold Nights.png</file>
+        <file>res/LightCones/icon/4stars/Abundance/What Is Real.png</file>
+        <file>res/LightCones/icon/4stars/Destruction/A Secret Vow.png</file>
+        <file>res/LightCones/icon/4stars/Destruction/Flames Afar.png</file>
+        <file>res/LightCones/icon/4stars/Destruction/Indelible Promise.png</file>
+        <file>res/LightCones/icon/4stars/Destruction/Nowhere to Run.png</file>
+        <file>res/LightCones/icon/4stars/Destruction/The Moles Welcome You.png</file>
+        <file>res/LightCones/icon/4stars/Destruction/Under the Blue Sky.png</file>
+        <file>res/LightCones/icon/4stars/Destruction/Woof! Walk Time!.png</file>
+        <file>res/LightCones/icon/4stars/Erudition/After the Charmony Fall.png</file>
+        <file>res/LightCones/icon/4stars/Erudition/Geniuses' Repose.png</file>
+        <file>res/LightCones/icon/4stars/Erudition/Make the World Clamor.png</file>
+        <file>res/LightCones/icon/4stars/Erudition/The Birth of the Self.png</file>
+        <file>res/LightCones/icon/4stars/Erudition/The Day The Cosmos Fell.png</file>
+        <file>res/LightCones/icon/4stars/Erudition/The Seriousness of Breakfast.png</file>
+        <file>res/LightCones/icon/4stars/Erudition/Today Is Another Peaceful Day.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/Carve the Moon, Weave the Clouds.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/Dance! Dance! Dance!.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/Dreamville Adventure.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/For Tomorrow's Journey.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/Memories of the Past.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/Past and Future.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/Planetary Rendezvous.png</file>
+        <file>res/LightCones/icon/4stars/Harmony/Poised to Bloom.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/Before the Tutorial Mission Starts.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/Boundless Choreo.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/Eyes of the Prey.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/Fermata.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/Good Night and Sleep Well.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/It's Showtime.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/Resolution Shines As Pearls of Sweat.png</file>
+        <file>res/LightCones/icon/4stars/Nihility/We Will Meet Again.png</file>
+        <file>res/LightCones/icon/4stars/Preservation/Concert for Two.png</file>
+        <file>res/LightCones/icon/4stars/Preservation/Day One of My New Life.png</file>
+        <file>res/LightCones/icon/4stars/Preservation/Destiny's Threads Forewoven.png</file>
+        <file>res/LightCones/icon/4stars/Preservation/Landau's Choice.png</file>
+        <file>res/LightCones/icon/4stars/Preservation/This Is Me!.png</file>
+        <file>res/LightCones/icon/4stars/Preservation/Trend of the Universal Market.png</file>
+        <file>res/LightCones/icon/4stars/Preservation/We Are Wildfire.png</file>
+        <file>res/LightCones/icon/4stars/The Hunt/Final Victor.png</file>
+        <file>res/LightCones/icon/4stars/The Hunt/Only Silence Remains.png</file>
+        <file>res/LightCones/icon/4stars/The Hunt/Return to Darkness.png</file>
+        <file>res/LightCones/icon/4stars/The Hunt/River Flows in Spring.png</file>
+        <file>res/LightCones/icon/4stars/The Hunt/Shadowed by Night.png</file>
+        <file>res/LightCones/icon/4stars/The Hunt/Subscribe for More!.png</file>
+        <file>res/LightCones/icon/4stars/The Hunt/Swordplay.png</file>
+        <file>res/LightCones/icon/5stars/Abundance/Echoes of the Coffin.png</file>
+        <file>res/LightCones/icon/5stars/Abundance/Night of Fright.png</file>
+        <file>res/LightCones/icon/5stars/Abundance/Scent Alone Stays True.png</file>
+        <file>res/LightCones/icon/5stars/Abundance/Time Waits for No One.png</file>
+        <file>res/LightCones/icon/5stars/Destruction/Brighter Than the Sun.png</file>
+        <file>res/LightCones/icon/5stars/Destruction/Dance at Sunset.png</file>
+        <file>res/LightCones/icon/5stars/Destruction/I Shall Be My Own Sword.png</file>
+        <file>res/LightCones/icon/5stars/Destruction/On the Fall of an Aeon.png</file>
+        <file>res/LightCones/icon/5stars/Destruction/Something Irreplaceable.png</file>
+        <file>res/LightCones/icon/5stars/Destruction/The Unreachable Side.png</file>
+        <file>res/LightCones/icon/5stars/Destruction/Whereabouts Should Dreams Rest.png</file>
+        <file>res/LightCones/icon/5stars/Erudition/An Instant Before A Gaze.png</file>
+        <file>res/LightCones/icon/5stars/Erudition/Before Dawn.png</file>
+        <file>res/LightCones/icon/5stars/Erudition/Eternal Calculus.png</file>
+        <file>res/LightCones/icon/5stars/Erudition/Night on the Milky Way.png</file>
+        <file>res/LightCones/icon/5stars/Erudition/Yet Hope Is Priceless.png</file>
+        <file>res/LightCones/icon/5stars/Harmony/But the Battle Isn't Over.png</file>
+        <file>res/LightCones/icon/5stars/Harmony/Earthly Escapade.png</file>
+        <file>res/LightCones/icon/5stars/Harmony/Flowing Nightglow.png</file>
+        <file>res/LightCones/icon/5stars/Harmony/Past Self in Mirror.png</file>
+        <file>res/LightCones/icon/5stars/Nihility/Along the Passing Shore.png</file>
+        <file>res/LightCones/icon/5stars/Nihility/In the Name of the World.png</file>
+        <file>res/LightCones/icon/5stars/Nihility/Incessant Rain.png</file>
+        <file>res/LightCones/icon/5stars/Nihility/Patience Is All You Need.png</file>
+        <file>res/LightCones/icon/5stars/Nihility/Reforged Remembrance.png</file>
+        <file>res/LightCones/icon/5stars/Nihility/Solitary Healing.png</file>
+        <file>res/LightCones/icon/5stars/Nihility/Those Many Springs.png</file>
+        <file>res/LightCones/icon/5stars/Preservation/Inherently Unjust Destiny.png</file>
+        <file>res/LightCones/icon/5stars/Preservation/Moment of Victory.png</file>
+        <file>res/LightCones/icon/5stars/Preservation/She Already Shut Her Eyes.png</file>
+        <file>res/LightCones/icon/5stars/Preservation/Texture of Memories.png</file>
+        <file>res/LightCones/icon/5stars/The Hunt/Baptism of Pure Thought.png</file>
+        <file>res/LightCones/icon/5stars/The Hunt/Cruising in the Stellar Sea.png</file>
+        <file>res/LightCones/icon/5stars/The Hunt/I Venture Forth to Hunt.png</file>
+        <file>res/LightCones/icon/5stars/The Hunt/In the Night.png</file>
+        <file>res/LightCones/icon/5stars/The Hunt/Sailing Towards a Second Life.png</file>
+        <file>res/LightCones/icon/5stars/The Hunt/Sleep Like the Dead.png</file>
+        <file>res/LightCones/icon/5stars/The Hunt/Worrisome, Blissful.png</file>
+    </qresource>
+    <qresource prefix="/lightcones/tachie">
+        <file>res/LightCones/tachie/3stars/Abundance/Cornucopia.png</file>
+        <file>res/LightCones/tachie/3stars/Abundance/Fine Fruit.png</file>
+        <file>res/LightCones/tachie/3stars/Abundance/Multiplication.png</file>
+        <file>res/LightCones/tachie/3stars/Destruction/Collapsing Sky.png</file>
+        <file>res/LightCones/tachie/3stars/Destruction/Mutual Demise.png</file>
+        <file>res/LightCones/tachie/3stars/Destruction/Shattered Home.png</file>
+        <file>res/LightCones/tachie/3stars/Erudition/Data Bank.png</file>
+        <file>res/LightCones/tachie/3stars/Erudition/Passkey.png</file>
+        <file>res/LightCones/tachie/3stars/Erudition/Sagacity.png</file>
+        <file>res/LightCones/tachie/3stars/Harmony/Chorus.png</file>
+        <file>res/LightCones/tachie/3stars/Harmony/Mediation.png</file>
+        <file>res/LightCones/tachie/3stars/Harmony/Meshing Cogs.png</file>
+        <file>res/LightCones/tachie/3stars/Nihility/Hidden Shadow.png</file>
+        <file>res/LightCones/tachie/3stars/Nihility/Loop.png</file>
+        <file>res/LightCones/tachie/3stars/Nihility/Void.png</file>
+        <file>res/LightCones/tachie/3stars/Preservation/Amber.png</file>
+        <file>res/LightCones/tachie/3stars/Preservation/Defense.png</file>
+        <file>res/LightCones/tachie/3stars/Preservation/Pioneering.png</file>
+        <file>res/LightCones/tachie/3stars/The Hunt/Adversarial.png</file>
+        <file>res/LightCones/tachie/3stars/The Hunt/Arrows.png</file>
+        <file>res/LightCones/tachie/3stars/The Hunt/Darting Arrow.png</file>
+        <file>res/LightCones/tachie/4stars/Abundance/Hey, Over Here.png</file>
+        <file>res/LightCones/tachie/4stars/Abundance/Perfect Timing.png</file>
+        <file>res/LightCones/tachie/4stars/Abundance/Post-Op Conversation.png</file>
+        <file>res/LightCones/tachie/4stars/Abundance/Quid Pro Quo.png</file>
+        <file>res/LightCones/tachie/4stars/Abundance/Shared Feeling.png</file>
+        <file>res/LightCones/tachie/4stars/Abundance/Warmth Shortens Cold Nights.png</file>
+        <file>res/LightCones/tachie/4stars/Abundance/What Is Real.png</file>
+        <file>res/LightCones/tachie/4stars/Destruction/A Secret Vow.png</file>
+        <file>res/LightCones/tachie/4stars/Destruction/Flames Afar.png</file>
+        <file>res/LightCones/tachie/4stars/Destruction/Indelible Promise.png</file>
+        <file>res/LightCones/tachie/4stars/Destruction/Nowhere to Run.png</file>
+        <file>res/LightCones/tachie/4stars/Destruction/The Moles Welcome You.png</file>
+        <file>res/LightCones/tachie/4stars/Destruction/Under the Blue Sky.png</file>
+        <file>res/LightCones/tachie/4stars/Destruction/Woof! Walk Time!.png</file>
+        <file>res/LightCones/tachie/4stars/Erudition/After the Charmony Fall.png</file>
+        <file>res/LightCones/tachie/4stars/Erudition/Geniuses' Repose.png</file>
+        <file>res/LightCones/tachie/4stars/Erudition/Make the World Clamor.png</file>
+        <file>res/LightCones/tachie/4stars/Erudition/The Birth of the Self.png</file>
+        <file>res/LightCones/tachie/4stars/Erudition/The Day The Cosmos Fell.png</file>
+        <file>res/LightCones/tachie/4stars/Erudition/The Seriousness of Breakfast.png</file>
+        <file>res/LightCones/tachie/4stars/Erudition/Today Is Another Peaceful Day.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/Carve the Moon, Weave the Clouds.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/Dance! Dance! Dance!.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/Dreamville Adventure.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/For Tomorrow's Journey.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/Memories of the Past.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/Past and Future.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/Planetary Rendezvous.png</file>
+        <file>res/LightCones/tachie/4stars/Harmony/Poised to Bloom.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/Before the Tutorial Mission Starts.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/Boundless Choreo.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/Eyes of the Prey.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/Fermata.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/Good Night and Sleep Well.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/It's Showtime.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/Resolution Shines As Pearls of Sweat.png</file>
+        <file>res/LightCones/tachie/4stars/Nihility/We Will Meet Again.png</file>
+        <file>res/LightCones/tachie/4stars/Preservation/Concert for Two.png</file>
+        <file>res/LightCones/tachie/4stars/Preservation/Day One of My New Life.png</file>
+        <file>res/LightCones/tachie/4stars/Preservation/Destiny's Threads Forewoven.png</file>
+        <file>res/LightCones/tachie/4stars/Preservation/Landau's Choice.png</file>
+        <file>res/LightCones/tachie/4stars/Preservation/This Is Me!.png</file>
+        <file>res/LightCones/tachie/4stars/Preservation/Trend of the Universal Market.png</file>
+        <file>res/LightCones/tachie/4stars/Preservation/We Are Wildfire.png</file>
+        <file>res/LightCones/tachie/4stars/The Hunt/Final Victor.png</file>
+        <file>res/LightCones/tachie/4stars/The Hunt/Only Silence Remains.png</file>
+        <file>res/LightCones/tachie/4stars/The Hunt/Return to Darkness.png</file>
+        <file>res/LightCones/tachie/4stars/The Hunt/River Flows in Spring.png</file>
+        <file>res/LightCones/tachie/4stars/The Hunt/Shadowed by Night.png</file>
+        <file>res/LightCones/tachie/4stars/The Hunt/Subscribe for More!.png</file>
+        <file>res/LightCones/tachie/4stars/The Hunt/Swordplay.png</file>
+        <file>res/LightCones/tachie/5stars/Abundance/Echoes of the Coffin.png</file>
+        <file>res/LightCones/tachie/5stars/Abundance/Night of Fright.png</file>
+        <file>res/LightCones/tachie/5stars/Abundance/Scent Alone Stays True.png</file>
+        <file>res/LightCones/tachie/5stars/Abundance/Time Waits for No One.png</file>
+        <file>res/LightCones/tachie/5stars/Destruction/Brighter Than the Sun.png</file>
+        <file>res/LightCones/tachie/5stars/Destruction/Dance at Sunset.png</file>
+        <file>res/LightCones/tachie/5stars/Destruction/I Shall Be My Own Sword.png</file>
+        <file>res/LightCones/tachie/5stars/Destruction/On the Fall of an Aeon.png</file>
+        <file>res/LightCones/tachie/5stars/Destruction/Something Irreplaceable.png</file>
+        <file>res/LightCones/tachie/5stars/Destruction/The Unreachable Side.png</file>
+        <file>res/LightCones/tachie/5stars/Destruction/Whereabouts Should Dreams Rest.png</file>
+        <file>res/LightCones/tachie/5stars/Erudition/An Instant Before A Gaze.png</file>
+        <file>res/LightCones/tachie/5stars/Erudition/Before Dawn.png</file>
+        <file>res/LightCones/tachie/5stars/Erudition/Eternal Calculus.png</file>
+        <file>res/LightCones/tachie/5stars/Erudition/Night on the Milky Way.png</file>
+        <file>res/LightCones/tachie/5stars/Erudition/Yet Hope Is Priceless.png</file>
+        <file>res/LightCones/tachie/5stars/Harmony/But the Battle Isn't Over.png</file>
+        <file>res/LightCones/tachie/5stars/Harmony/Earthly Escapade.png</file>
+        <file>res/LightCones/tachie/5stars/Harmony/Flowing Nightglow.png</file>
+        <file>res/LightCones/tachie/5stars/Harmony/Past Self in Mirror.png</file>
+        <file>res/LightCones/tachie/5stars/Nihility/Along the Passing Shore.png</file>
+        <file>res/LightCones/tachie/5stars/Nihility/In the Name of the World.png</file>
+        <file>res/LightCones/tachie/5stars/Nihility/Incessant Rain.png</file>
+        <file>res/LightCones/tachie/5stars/Nihility/Patience Is All You Need.png</file>
+        <file>res/LightCones/tachie/5stars/Nihility/Reforged Remembrance.png</file>
+        <file>res/LightCones/tachie/5stars/Nihility/Solitary Healing.png</file>
+        <file>res/LightCones/tachie/5stars/Nihility/Those Many Springs.png</file>
+        <file>res/LightCones/tachie/5stars/Preservation/Inherently Unjust Destiny.png</file>
+        <file>res/LightCones/tachie/5stars/Preservation/Moment of Victory.png</file>
+        <file>res/LightCones/tachie/5stars/Preservation/She Already Shut Her Eyes.png</file>
+        <file>res/LightCones/tachie/5stars/Preservation/Texture of Memories.png</file>
+        <file>res/LightCones/tachie/5stars/The Hunt/Baptism of Pure Thought.png</file>
+        <file>res/LightCones/tachie/5stars/The Hunt/Cruising in the Stellar Sea.png</file>
+        <file>res/LightCones/tachie/5stars/The Hunt/I Venture Forth to Hunt.png</file>
+        <file>res/LightCones/tachie/5stars/The Hunt/In the Night.png</file>
+        <file>res/LightCones/tachie/5stars/The Hunt/Sailing Towards a Second Life.png</file>
+        <file>res/LightCones/tachie/5stars/The Hunt/Sleep Like the Dead.png</file>
+        <file>res/LightCones/tachie/5stars/The Hunt/Worrisome, Blissful.png</file>
+    </qresource>
+    <qresource prefix="/relics/relic">
+        <file>res/Relics/Relic/Band of Sizzling Thunder/Body.png</file>
+        <file>res/Relics/Relic/Band of Sizzling Thunder/Feet.png</file>
+        <file>res/Relics/Relic/Band of Sizzling Thunder/Hands.png</file>
+        <file>res/Relics/Relic/Band of Sizzling Thunder/Head.png</file>
+        <file>res/Relics/Relic/Champion of Streetwise Boxing/Body.png</file>
+        <file>res/Relics/Relic/Champion of Streetwise Boxing/Feet.png</file>
+        <file>res/Relics/Relic/Champion of Streetwise Boxing/Hands.png</file>
+        <file>res/Relics/Relic/Champion of Streetwise Boxing/Head.png</file>
+        <file>res/Relics/Relic/Eagle of Twilight Line/Body.png</file>
+        <file>res/Relics/Relic/Eagle of Twilight Line/Feet.png</file>
+        <file>res/Relics/Relic/Eagle of Twilight Line/Hands.png</file>
+        <file>res/Relics/Relic/Eagle of Twilight Line/Head.png</file>
+        <file>res/Relics/Relic/Firesmith of Lava-Forging/Body.png</file>
+        <file>res/Relics/Relic/Firesmith of Lava-Forging/Feet.png</file>
+        <file>res/Relics/Relic/Firesmith of Lava-Forging/Hands.png</file>
+        <file>res/Relics/Relic/Firesmith of Lava-Forging/Head.png</file>
+        <file>res/Relics/Relic/Genius of Brilliant Stars/Body.png</file>
+        <file>res/Relics/Relic/Genius of Brilliant Stars/Feet.png</file>
+        <file>res/Relics/Relic/Genius of Brilliant Stars/Hands.png</file>
+        <file>res/Relics/Relic/Genius of Brilliant Stars/Head.png</file>
+        <file>res/Relics/Relic/Guard of Wuthering Snow/Body.png</file>
+        <file>res/Relics/Relic/Guard of Wuthering Snow/Feet.png</file>
+        <file>res/Relics/Relic/Guard of Wuthering Snow/Hands.png</file>
+        <file>res/Relics/Relic/Guard of Wuthering Snow/Head.png</file>
+        <file>res/Relics/Relic/Hunter of Glacial Forest/Body.png</file>
+        <file>res/Relics/Relic/Hunter of Glacial Forest/Feet.png</file>
+        <file>res/Relics/Relic/Hunter of Glacial Forest/Hands.png</file>
+        <file>res/Relics/Relic/Hunter of Glacial Forest/Head.png</file>
+        <file>res/Relics/Relic/Iron Cavalry Against the Scourge/Body.png</file>
+        <file>res/Relics/Relic/Iron Cavalry Against the Scourge/Feet.png</file>
+        <file>res/Relics/Relic/Iron Cavalry Against the Scourge/Hands.png</file>
+        <file>res/Relics/Relic/Iron Cavalry Against the Scourge/Head.png</file>
+        <file>res/Relics/Relic/Knight of Purity Palace/Body.png</file>
+        <file>res/Relics/Relic/Knight of Purity Palace/Feet.png</file>
+        <file>res/Relics/Relic/Knight of Purity Palace/Hands.png</file>
+        <file>res/Relics/Relic/Knight of Purity Palace/Head.png</file>
+        <file>res/Relics/Relic/Longevous Disciple/Body.png</file>
+        <file>res/Relics/Relic/Longevous Disciple/Feet.png</file>
+        <file>res/Relics/Relic/Longevous Disciple/Hands.png</file>
+        <file>res/Relics/Relic/Longevous Disciple/Head.png</file>
+        <file>res/Relics/Relic/Messenger Traversing Hackerspace/Body.png</file>
+        <file>res/Relics/Relic/Messenger Traversing Hackerspace/Feet.png</file>
+        <file>res/Relics/Relic/Messenger Traversing Hackerspace/Hands.png</file>
+        <file>res/Relics/Relic/Messenger Traversing Hackerspace/Head.png</file>
+        <file>res/Relics/Relic/Musketeer of Wild Wheat/Body.png</file>
+        <file>res/Relics/Relic/Musketeer of Wild Wheat/Feet.png</file>
+        <file>res/Relics/Relic/Musketeer of Wild Wheat/Hands.png</file>
+        <file>res/Relics/Relic/Musketeer of Wild Wheat/Head.png</file>
+        <file>res/Relics/Relic/Passerby of Wandering Cloud/Body.png</file>
+        <file>res/Relics/Relic/Passerby of Wandering Cloud/Feet.png</file>
+        <file>res/Relics/Relic/Passerby of Wandering Cloud/Hands.png</file>
+        <file>res/Relics/Relic/Passerby of Wandering Cloud/Head.png</file>
+        <file>res/Relics/Relic/Pioneer Diver of Dead Waters/Body.png</file>
+        <file>res/Relics/Relic/Pioneer Diver of Dead Waters/Feet.png</file>
+        <file>res/Relics/Relic/Pioneer Diver of Dead Waters/Hands.png</file>
+        <file>res/Relics/Relic/Pioneer Diver of Dead Waters/Head.png</file>
+        <file>res/Relics/Relic/Prisoner in Deep Confinement/Body.png</file>
+        <file>res/Relics/Relic/Prisoner in Deep Confinement/Feet.png</file>
+        <file>res/Relics/Relic/Prisoner in Deep Confinement/Hands.png</file>
+        <file>res/Relics/Relic/Prisoner in Deep Confinement/Head.png</file>
+        <file>res/Relics/Relic/The Ashblazing Grand Duke/Body.png</file>
+        <file>res/Relics/Relic/The Ashblazing Grand Duke/Feet.png</file>
+        <file>res/Relics/Relic/The Ashblazing Grand Duke/Hands.png</file>
+        <file>res/Relics/Relic/The Ashblazing Grand Duke/Head.png</file>
+        <file>res/Relics/Relic/The Wind-Soaring Valorous/Body.png</file>
+        <file>res/Relics/Relic/The Wind-Soaring Valorous/Feet.png</file>
+        <file>res/Relics/Relic/The Wind-Soaring Valorous/Hands.png</file>
+        <file>res/Relics/Relic/The Wind-Soaring Valorous/Head.png</file>
+        <file>res/Relics/Relic/Thief of Shooting Meteor/Body.png</file>
+        <file>res/Relics/Relic/Thief of Shooting Meteor/Feet.png</file>
+        <file>res/Relics/Relic/Thief of Shooting Meteor/Hands.png</file>
+        <file>res/Relics/Relic/Thief of Shooting Meteor/Head.png</file>
+        <file>res/Relics/Relic/Wastelander of Banditry Desert/Body.png</file>
+        <file>res/Relics/Relic/Wastelander of Banditry Desert/Feet.png</file>
+        <file>res/Relics/Relic/Wastelander of Banditry Desert/Hands.png</file>
+        <file>res/Relics/Relic/Wastelander of Banditry Desert/Head.png</file>
+        <file>res/Relics/Relic/Watchmaker, Master of Dream Machinations/Body.png</file>
+        <file>res/Relics/Relic/Watchmaker, Master of Dream Machinations/Feet.png</file>
+        <file>res/Relics/Relic/Watchmaker, Master of Dream Machinations/Hands.png</file>
+        <file>res/Relics/Relic/Watchmaker, Master of Dream Machinations/Head.png</file>
+    </qresource>
+    <qresource prefix="/relics/Planar Ornaments">
+        <file>res/Relics/Planar Ornaments/Belobog of the Architects/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Belobog of the Architects/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Broken Keel/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Broken Keel/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Celestial Differentiator/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Celestial Differentiator/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Duran, Dynasty of Running Wolves/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Duran, Dynasty of Running Wolves/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Firmament Frontline Glamoth/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Firmament Frontline Glamoth/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Fleet of the Ageless/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Fleet of the Ageless/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Forge of the Kalpagni Lantern/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Forge of the Kalpagni Lantern/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Inert Salsotto/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Inert Salsotto/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Izumo Gensei and Takama Divine Realm/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Izumo Gensei and Takama Divine Realm/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Lushaka, the Sunken Seas/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Lushaka, the Sunken Seas/PlannarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Pan-Cosmic Commercial Enterprise/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Pan-Cosmic Commercial Enterprise/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Penacony, Land of the Dreams/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Penacony, Land of the Dreams/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Rutilant Arena/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Rutilant Arena/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Sigonia, the Unclaimed Desolation/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Sigonia, the Unclaimed Desolation/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Space Sealing Station/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Space Sealing Station/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Sprightly Vonwacq/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Sprightly Vonwacq/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/Talia Kingdom of Banditry/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/Talia Kingdom of Banditry/PlanarSphere.png</file>
+        <file>res/Relics/Planar Ornaments/The Wondrous BananAmusement Park/LinkRope.png</file>
+        <file>res/Relics/Planar Ornaments/The Wondrous BananAmusement Park/PlannarSphere.png</file>
+    </qresource>
+    <qresource prefix="/characters/5stars">
+        <file>res/Characters/5stars/Abundance/Bailu.png</file>
+        <file>res/Characters/5stars/Abundance/Huohuo.png</file>
+        <file>res/Characters/5stars/Abundance/Lingsha.png</file>
+        <file>res/Characters/5stars/Abundance/Luocha.png</file>
+        <file>res/Characters/5stars/Destruction/Blade.png</file>
+        <file>res/Characters/5stars/Destruction/Clara.png</file>
+        <file>res/Characters/5stars/Destruction/Dan Heng Imbibitor Lunae.png</file>
+        <file>res/Characters/5stars/Destruction/Firefly.png</file>
+        <file>res/Characters/5stars/Destruction/Jingliu.png</file>
+        <file>res/Characters/5stars/Destruction/Trailblazer Destruction.png</file>
+        <file>res/Characters/5stars/Destruction/Yunli.png</file>
+        <file>res/Characters/5stars/Erudition/Argenti.png</file>
+        <file>res/Characters/5stars/Erudition/Himeko.png</file>
+        <file>res/Characters/5stars/Erudition/Jade.png</file>
+        <file>res/Characters/5stars/Erudition/Jing Yuan.png</file>
+        <file>res/Characters/5stars/Harmony/Bronya.png</file>
+        <file>res/Characters/5stars/Harmony/Robin.png</file>
+        <file>res/Characters/5stars/Harmony/Ruan Mei.png</file>
+        <file>res/Characters/5stars/Harmony/Sparkle.png</file>
+        <file>res/Characters/5stars/Harmony/Trailblazer Harmony.png</file>
+        <file>res/Characters/5stars/Nihility/Acheron.png</file>
+        <file>res/Characters/5stars/Nihility/Black Swan.png</file>
+        <file>res/Characters/5stars/Nihility/Jiaoqiu.png</file>
+        <file>res/Characters/5stars/Nihility/Kafka.png</file>
+        <file>res/Characters/5stars/Nihility/Silver Wolf.png</file>
+        <file>res/Characters/5stars/Nihility/Welt.png</file>
+        <file>res/Characters/5stars/Preservation/Aventurine.png</file>
+        <file>res/Characters/5stars/Preservation/Fu Xuan.png</file>
+        <file>res/Characters/5stars/Preservation/Gepard.png</file>
+        <file>res/Characters/5stars/Preservation/Trailblazer Preservation.png</file>
+        <file>res/Characters/5stars/The Hunt/Boothill.png</file>
+        <file>res/Characters/5stars/The Hunt/Feixiao.png</file>
+        <file>res/Characters/5stars/The Hunt/Ratio.png</file>
+        <file>res/Characters/5stars/The Hunt/Seele.png</file>
+        <file>res/Characters/5stars/The Hunt/Topaz Numby.png</file>
+        <file>res/Characters/5stars/The Hunt/Yanqing.png</file>
+    </qresource>
+    <qresource prefix="/characters/4stars">
+        <file>res/Characters/4stars/Abundance/Gallagher.png</file>
+        <file>res/Characters/4stars/Abundance/Lynx.png</file>
+        <file>res/Characters/4stars/Abundance/Natasha.png</file>
+        <file>res/Characters/4stars/Destruction/Arlan.png</file>
+        <file>res/Characters/4stars/Destruction/Hook.png</file>
+        <file>res/Characters/4stars/Destruction/Misha.png</file>
+        <file>res/Characters/4stars/Destruction/Xueyi.png</file>
+        <file>res/Characters/4stars/Erudition/Herta.png</file>
+        <file>res/Characters/4stars/Erudition/Qingque.png</file>
+        <file>res/Characters/4stars/Erudition/Serval.png</file>
+        <file>res/Characters/4stars/Harmony/Asta.png</file>
+        <file>res/Characters/4stars/Harmony/Hanya.png</file>
+        <file>res/Characters/4stars/Harmony/Tingyun.png</file>
+        <file>res/Characters/4stars/Harmony/Yukong.png</file>
+        <file>res/Characters/4stars/Nihility/Guinaifen.png</file>
+        <file>res/Characters/4stars/Nihility/Luka.png</file>
+        <file>res/Characters/4stars/Nihility/Pela.png</file>
+        <file>res/Characters/4stars/Nihility/Sampo.png</file>
+        <file>res/Characters/4stars/Preservation/March 7th Preservation.png</file>
+        <file>res/Characters/4stars/The Hunt/Dan Heng.png</file>
+        <file>res/Characters/4stars/The Hunt/March 7th The Hunt.png</file>
+        <file>res/Characters/4stars/The Hunt/Moze.png</file>
+        <file>res/Characters/4stars/The Hunt/Sushang.png</file>
+    </qresource>
+    <qresource prefix="/staticon">
+        <file>res/statsicon/atk.png</file>
+        <file>res/statsicon/critdmg.png</file>
+        <file>res/statsicon/critrate.png</file>
+        <file>res/statsicon/def.png</file>
+        <file>res/statsicon/hp.png</file>
+        <file>res/statsicon/spd.png</file>
+    </qresource>
+</RCC>
